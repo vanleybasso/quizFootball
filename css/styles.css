@@ -1,0 +1,172 @@
+/* estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* estilo do corpo da página */
+body {
+  background-color: #002D62; 
+  color: #FFF; 
+}
+
+/* classe para esconder elementos */
+.hide {
+  display: none !important;
+}
+
+/* estilo do título principal */
+#main-title {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #B22234; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #FFF; 
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* estilo do container de pontuação */
+#score-container {
+  background-color: #003B5C; 
+  color: #FFF; 
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* estilo dos parágrafos dentro do container de pontuação */
+#score-container p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+/* estilo da exibição da pontuação */
+#score-container #display-score {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFD700; 
+}
+
+/* estilo do número de respostas corretas */
+#correct-answers {
+  font-weight: bold;
+  color: white; 
+}
+
+/* estilo da quantidade total de perguntas */
+#questions-qty {
+  font-weight: bold;
+  color: #FFFFFF; 
+}
+
+/* estilo do botão "refazer quiz" */
+#restart {
+  background-color: #FFD700; 
+  color: #B22234; 
+  font-weight: bold;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  width: 180px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* estilo do botão "refazer quiz" ao passar o mouse */
+#restart:hover {
+  background-color: transparent;
+  border-color: #FFD700; 
+  color: #FFD700; 
+}
+
+/* estilo do container do quiz */
+#quizz-container {
+  width: 500px;
+  margin: 50px auto;
+  border: 2px solid #FFD700;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #003B5C;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* estilo da pergunta */
+#question {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+/* estilo do número da pergunta */
+#question-number {
+  font-weight: bold;
+  color: #FFD700; 
+}
+
+/* estilo dos botões de resposta */
+#answers-box button {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #B22234;
+  border: 2px solid transparent;
+  color: #FFF; 
+  text-align: left;
+  padding-left: 15px;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* estilo do botão de resposta ao passar o mouse */
+#answers-box button:hover {
+  background-color: #FFD700; 
+  color: #FFF; 
+}
+
+/* estilo da letra das alternativas */
+#answers-box .btn-letter {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #FFD700;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  flex: 1 1 0;
+  max-width: 40px;
+}
+
+/* estilo do texto da alternativa */
+.question-answer {
+  flex: 1 1 0;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* estilo para respostas erradas */
+#quizz-container .wrong-answer,
+#quizz-container .wrong-answer .btn-letter {
+  background-color: #FF4F56; 
+  color: #FFF;
+}
+
+/* estilo para respostas corretas */
+#quizz-container .correct-answer,
+#quizz-container .correct-answer .btn-letter {
+  background-color: #40B576; 
+  color: #FFF;
+}
